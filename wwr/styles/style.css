@@ -1,12 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: #fbfbfb;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
+}
+
+#logo-link {
+    padding-top: 5px;
 }
 
 nav a {
     text-align: center;
     color: #003366;
     text-decoration: none;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: #ff6600;
+    color: #f4f2f2;
+}
+
+h2 {
+    margin: 0;
+}
+
+#hero-box img {
+    width: 100%;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -26,23 +53,36 @@ main section {
     background-color: #003366;
 }
 
-body {
-    background-color: #fbfbfb;
-}
-
 header {
     background-color: #f4f2f2;
 }
 
-nav a:hover {
-    background-color: #ff6600;
-    color: #f4f2f2;
+.home-title {
+    font-size: 2em;
+    color: #003366;
+    margin-top: 10px;
+}
+
+h4 {
+    color: #003366;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
 }
 
 .book, .join {
     background-color: #003366;
     color: #f4f2f2;
     text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -50,8 +90,18 @@ nav a:hover {
     color: #f4f2f2;
 }
 
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid black;
+}
+
 .msg {
     background-color: #00a86b;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
@@ -60,11 +110,14 @@ nav a:hover {
 
 .msg p {
     color: #000000;
+    padding-bottom: 15px;
 }
 
 footer {
     background-color: #000000;
     color: #f4f2f2;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer p {
@@ -81,14 +134,6 @@ footer p a:hover {
     text-decoration: underline;
 }
 
-.home-title {
-    color: #003366;
-}
-
-h4 {
-    color: #003366;
-}
-
-.icon {
-    width: 80px;
+footer .social img {
+    padding-top: 15px;   
 }

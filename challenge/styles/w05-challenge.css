@@ -1,0 +1,31 @@
+.container {
+    width: 900px;
+    height: 700px;
+    text-align: center;
+    margin: auto;
+}
+
+.container .title-box img {
+    width: 100%;
+    margin: 0;
+}
+
+.img-box {
+    background-color: #737373;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-box div {
+    border: 10px solid #444444;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.img-box img {
+    width: 100%;
+    border-radius: 50%;
+}
