@@ -1,0 +1,44 @@
+.container {
+    width: 550px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+}
+
+.img-box {
+    position: relative;
+}
+
+.img-box h1 {
+    font-size: 6em;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+
+.img-box img {
+    width: 100%;
+}
+
+.text-box {
+    position: relative;
+    background-color: #B9B8B9;
+    display: flex;
+    justify-content: center;
+}
+
+.text-box h1 {
+    position: absolute;
+}
+
+.text-box .sweet {
+    top: 50px;
+    font-size: 6em;
+}
+
+.text-box .cherries {
+    top: 200px;
+    font-size: 3em;
+    color: #9C0E11;
+}
