@@ -187,11 +187,11 @@ section {
 }
 
 .contact-info {
-  column-span: 1;
+  column-span: none;
 }
 
 .map {
-  column-span: 2;
+  column-span: all;
   text-align: center;
 }
 
