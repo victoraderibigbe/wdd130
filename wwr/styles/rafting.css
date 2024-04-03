@@ -164,6 +164,126 @@ section {
   align-self: stretch;
 }
 
+/* Contact Page */
+.company-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.company-info p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.company-info ul li {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.company-info ul {
+  list-style-type: none;
+}
+
+.contact-info {
+  column-span: 1;
+}
+
+.map {
+  column-span: 2;
+  text-align: center;
+}
+
+.employee-profiles {
+  margin-top: 30px;
+}
+
+.employee {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.employee img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.contact-form {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.contact-form .form-item {
+  margin-bottom: 0.5rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-form .form-check-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.contact-form input[type="checkbox"] {
+  margin-right: 0.3rem;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.purpose-box p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.radio-box {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 1rem auto;
+}
+
+.radio-box label {
+  margin-left: 1rem;
+}
+
+.contact-form button {
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.contact-form button:hover {
+  opacity: 80%;
+}
+
 footer {
   background-color: var(--nav-background-color);
   display: flex;
@@ -185,5 +305,19 @@ footer {
 }
 
 .sociallinks img {
-    color: var(--nav-link-color);
+  color: var(--nav-link-color);
+}
+
+.contact-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-footer a {
+  color: var(--nav-link-color);
+}
+
+.contact-footer a:hover {
+  color: var(--nav-hover-link-color);
 }
