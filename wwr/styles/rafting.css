@@ -256,12 +256,12 @@ section {
   height: 250px;
 }
 
-.cta {
+.trip-cta {
   text-align: center;
   padding: 0 10rem;
 }
 
-.cta .cta-btn,
+.trip-cta .trip-cta-btn,
 .trip-fig figcaption .trip-btn,
 .table-btn {
   padding: 1.5rem 12rem;
@@ -275,7 +275,7 @@ section {
 }
 
 .newsletter button:hover,
-.cta .cta-btn:hover,
+.trip-cta .trip-cta-btn:hover,
 .trip-fig figcaption .trip-btn:hover,
 .table-btn:hover {
   opacity: 80%;
@@ -327,7 +327,7 @@ section {
 
 .trip-fig,
 .trip-img {
-  max-width: 24rem;
+  max-width: 22rem;
   text-align: center;
 }
 
