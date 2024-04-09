@@ -43,8 +43,17 @@ h2 {
   text-align: center;
 }
 
+p {
+  margin: 1rem auto;
+  line-height: 1.5rem;
+}
+
 a {
   text-decoration: none;
+}
+
+a.btn-link {
+  color: #ccc;
 }
 
 header {
@@ -98,12 +107,29 @@ nav a:hover {
   height: auto;
 }
 
+.hero .trip-hero-img {
+  height: 40vh;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .hero h1 {
   position: absolute;
   top: 30%;
   width: 100%;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero .trip-hero-heading {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero article {
@@ -128,7 +154,29 @@ section {
   margin: 2rem auto;
 }
 
-/* History Section */
+.cta {
+  text-align: center;
+  padding: 0 10rem;
+}
+
+.cta .cta-btn,
+.trip-fig figcaption .trip-btn,
+.table-btn {
+  padding: 1.5rem 12rem;
+  font-size: 1.2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease-in-out;
+}
+
+.cta .cta-btn:hover,
+.trip-fig figcaption .trip-btn:hover,
+.table-btn:hover {
+  opacity: 80%;
+}
 
 .history-layout {
   display: flex;
@@ -145,26 +193,90 @@ section {
   align-items: center;
 }
 
-/* Adventure Section */
-
-.adventure-layout {
+.adventure-layout,
+.trip-layout .img-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.adventure-fig {
+.trip-layout {
+  text-align: center;
+}
+
+.trip-layout .img-box {
+  margin: 2rem 0;
+}
+
+.adventure-fig,
+.trip-fig {
   flex: 1 1 auto;
 }
 
 .adventure-fig,
-.adventure-img {
+.adventure-img,
+.trip-fig,
+.trip-img {
   max-width: 12rem;
   width: auto;
   align-self: stretch;
 }
 
-/* Contact Page */
+.trip-fig,
+.trip-img {
+  max-width: 24rem;
+  text-align: center;
+}
+
+.trip-fig figcaption .trip-btn,
+.table-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.available-trips {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+thead,
+tbody {
+  width: 100%;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+th,
+td {
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+th:last-child,
+td:last-child {
+  border-right: none;
+}
+
 .company-info {
   display: grid;
   grid-template-columns: 1fr 2fr;
